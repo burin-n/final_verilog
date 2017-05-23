@@ -1,0 +1,176 @@
+
+*** Running vivado
+    with args -log design_1_axi_quad_spi_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_quad_spi_0_0.tcl
+
+
+****** Vivado v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source design_1_axi_quad_spi_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1101.156 ; gain = 190.301 ; free physical = 954 ; free virtual = 25595
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_quad_spi_0_0' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/synth/design_1_axi_quad_spi_0_0.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'axi_quad_spi' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:33002]
+INFO: [Synth 8-638] synthesizing module 'axi_quad_spi_top' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:31276]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized0' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized0' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized1' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized1' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized2' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized2' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized3' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized3' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized4' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized4' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized5' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized5' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized6' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized6' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized7' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized7' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized8' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized8' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized9' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized9' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized10' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized10' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized11' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized11' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized12' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized12' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized13' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized13' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized14' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized14' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized15' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized15' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized16' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized16' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized17' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized17' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized18' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized18' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized19' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized19' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized20' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized20' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized21' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized21' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized22' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized22' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized23' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized23' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized24' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized24' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized25' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized25' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized26' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized26' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized27' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized27' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized28' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized28' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized29' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized29' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized30' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized30' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized31' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized31' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized32' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized32' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized33' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized33' (1#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'qspi_core_interface' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:17818]
+INFO: [Synth 8-638] synthesizing module 'reset_sync_module' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:2426]
+INFO: [Synth 8-256] done synthesizing module 'reset_sync_module' (5#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:2426]
+INFO: [Synth 8-638] synthesizing module 'cross_clk_sync_fifo_1' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:13568]
+INFO: [Synth 8-256] done synthesizing module 'cross_clk_sync_fifo_1' (6#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:13568]
+INFO: [Synth 8-638] synthesizing module 'async_fifo_fg' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/61a7/hdl/lib_fifo_v1_0_rfs.vhd:253]
+INFO: [Synth 8-256] done synthesizing module 'async_fifo_fg' (30#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/61a7/hdl/lib_fifo_v1_0_rfs.vhd:253]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (31#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'counter_f' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:669]
+INFO: [Synth 8-256] done synthesizing module 'counter_f' (32#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:669]
+INFO: [Synth 8-638] synthesizing module 'qspi_fifo_ifmodule' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:12095]
+INFO: [Synth 8-256] done synthesizing module 'qspi_fifo_ifmodule' (33#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:12095]
+INFO: [Synth 8-638] synthesizing module 'qspi_occupancy_reg' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:3646]
+INFO: [Synth 8-256] done synthesizing module 'qspi_occupancy_reg' (34#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:3646]
+INFO: [Synth 8-638] synthesizing module 'qspi_mode_0_module' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:7854]
+INFO: [Synth 8-256] done synthesizing module 'qspi_mode_0_module' (35#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:7854]
+INFO: [Synth 8-638] synthesizing module 'qspi_cntrl_reg' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:12450]
+INFO: [Synth 8-256] done synthesizing module 'qspi_cntrl_reg' (36#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:12450]
+INFO: [Synth 8-638] synthesizing module 'qspi_status_slave_sel_reg' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:2657]
+INFO: [Synth 8-256] done synthesizing module 'qspi_status_slave_sel_reg' (37#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:2657]
+INFO: [Synth 8-638] synthesizing module 'soft_reset' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:874]
+INFO: [Synth 8-256] done synthesizing module 'soft_reset' (38#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:874]
+INFO: [Synth 8-638] synthesizing module 'interrupt_control' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/e956/hdl/interrupt_control_v3_1_vh_rfs.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'interrupt_control' (39#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/e956/hdl/interrupt_control_v3_1_vh_rfs.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'qspi_core_interface' (40#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:17818]
+INFO: [Synth 8-256] done synthesizing module 'axi_quad_spi_top' (41#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:31276]
+INFO: [Synth 8-256] done synthesizing module 'axi_quad_spi' (42#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/fd71/hdl/axi_quad_spi_v3_2_rfs.vhd:33002]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_quad_spi_0_0' (43#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/synth/design_1_axi_quad_spi_0_0.vhd:97]
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1240.625 ; gain = 329.770 ; free physical = 1199 ; free virtual = 25844
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1240.625 ; gain = 329.770 ; free physical = 1192 ; free virtual = 25837
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1523.301 ; gain = 0.000 ; free physical = 2004 ; free virtual = 26649
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1523.301 ; gain = 612.445 ; free physical = 1674 ; free virtual = 26319
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1523.301 ; gain = 612.445 ; free physical = 1674 ; free virtual = 26319
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1523.301 ; gain = 612.445 ; free physical = 1672 ; free virtual = 26317
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1523.301 ; gain = 612.445 ; free physical = 1828 ; free virtual = 26473
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1523.301 ; gain = 612.445 ; free physical = 1708 ; free virtual = 26353
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|Module Name  | RTL Object                                                                                                                                                                                                                 | Inference      | Size (Depth x Width) | Primitives   | 
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|axi_quad_spi | NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 16 x 8               | RAM32M x 2   | 
+|axi_quad_spi | NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 16 x 8               | RAM32M x 2   | 
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1523.301 ; gain = 612.445 ; free physical = 1300 ; free virtual = 25945
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1523.301 ; gain = 612.445 ; free physical = 1254 ; free virtual = 25900
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 1523.301 ; gain = 612.445 ; free physical = 1243 ; free virtual = 25889
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1523.301 ; gain = 612.445 ; free physical = 1243 ; free virtual = 25889
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1523.301 ; gain = 612.445 ; free physical = 1243 ; free virtual = 25889
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1523.301 ; gain = 612.445 ; free physical = 1243 ; free virtual = 25889
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1523.301 ; gain = 612.445 ; free physical = 1243 ; free virtual = 25889
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1523.301 ; gain = 612.445 ; free physical = 1243 ; free virtual = 25889
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1523.301 ; gain = 612.445 ; free physical = 1243 ; free virtual = 25889
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |LUT1   |     8|
+|2     |LUT2   |    77|
+|3     |LUT3   |    49|
+|4     |LUT4   |    56|
+|5     |LUT5   |    72|
+|6     |LUT6   |   114|
+|7     |RAM32M |     4|
+|8     |SRL16E |     1|
+|9     |FD     |     8|
+|10    |FDCE   |   146|
+|11    |FDPE   |    60|
+|12    |FDR    |    57|
+|13    |FDRE   |   266|
+|14    |FDSE   |    11|
++------+-------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1523.301 ; gain = 612.445 ; free physical = 1243 ; free virtual = 25889
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1969.473 ; gain = 957.898 ; free physical = 759 ; free virtual = 25405

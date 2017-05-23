@@ -1,0 +1,147 @@
+#include "spi_io.h"
+#include "xparameters.h"	/* XPAR parameters */
+#include "xspi.h"		/* SPI device driver */
+#include "xspi_l.h"
+#include "xtmrctr.h"
+#define TMRCTR_DEVICE_ID	XPAR_TMRCTR_0_DEVICE_ID
+
+/*
+ * The following constants map to the XPAR parameters created in the
+ * xparameters.h file. They are defined here such that a user can easily
+ * change all the needed parameters in one place.
+ */
+#define SPI_DEVICE_ID		XPAR_SPI_0_DEVICE_ID
+
+
+static XSpi  SpiInstance;	 /* The instance of the SPI device */
+static XTmrCtr TimerCounter; /* The instance of the Tmrctr Device */
+
+
+/**
+    \brief Initialize SPI hardware
+ */
+void SPI_Init (void) {
+
+	int Status;
+	XSpi_Config *ConfigPtr;	/* Pointer to Configuration data */
+	// Init Timer
+	XTmrCtr *TmrCtrInstancePtr = &TimerCounter;
+
+	/*
+	 * Initialize the timer counter so that it's ready to use,
+	 * specify the device ID that is generated in xparameters.h
+	 */
+	Status = XTmrCtr_Initialize(TmrCtrInstancePtr, TMRCTR_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	XTmrCtr_SetOptions(TmrCtrInstancePtr, 0,
+				0);
+	/*
+	 * Initialize the SPI driver so that it is  ready to use.
+	 */
+	ConfigPtr = XSpi_LookupConfig(SPI_DEVICE_ID);
+	if (ConfigPtr == NULL) {
+		return ; //XST_DEVICE_NOT_FOUND;
+	}
+
+	Status = XSpi_CfgInitialize(&SpiInstance, ConfigPtr,
+				  ConfigPtr->BaseAddress);
+	if (Status != XST_SUCCESS) {
+		return ;
+	}
+
+	XSpi_Start(&SpiInstance);
+	XSpi_IntrGlobalDisable(&SpiInstance);
+	XSpi_SetOptions(&SpiInstance, XSP_MASTER_OPTION | XSP_MANUAL_SSELECT_OPTION);
+}
+
+/**
+    \brief Read/Write a single byte.
+    \param d Byte to send.
+    \return Byte that arrived.
+ */
+#define BUFFER_SIZE      12
+u8 ReadBuffer[BUFFER_SIZE];
+u8 WriteBuffer[BUFFER_SIZE];
+
+BYTE SPI_RW (BYTE d){
+	WriteBuffer[0] = d;
+	XSpi_SetSlaveSelect(&SpiInstance, 0x1);
+	XSpi_Transfer(&SpiInstance, WriteBuffer, ReadBuffer, 1);
+	return ReadBuffer[0];
+}
+
+/**
+    \brief Flush of SPI buffer.
+ */
+void SPI_Release (void){
+    WORD idx;
+    for (idx=512; idx && (SPI_RW(0xFF)!=0xFF); idx--);
+
+}
+
+/**
+    \brief Selecting function in SPI terms, associated with SPI module.
+ */
+void SPI_CS_Low (void){
+//	XSpi_SetSlaveSelect(&SpiInstance, 0x1);
+	XSpi_SetSlaveSelectReg(&SpiInstance,
+				0xFFFFFFFE);
+}
+
+/**
+    \brief Deselecting function in SPI terms, associated with SPI module.
+ */
+void SPI_CS_High (void){
+//	XSpi_SetSlaveSelect(&SpiInstance, 0x0);
+	XSpi_SetSlaveSelectReg(&SpiInstance,
+				0xFFFFFFFF);
+
+
+}
+
+/**
+    \brief Setting frequency of SPI's clock to maximun possible.
+ */
+void SPI_Freq_High (void){
+
+}
+
+/**
+    \brief Setting frequency of SPI's clock equal or lower than 400kHz.
+ */
+void SPI_Freq_Low (void){
+
+}
+
+/**
+    \brief Start a non-blocking timer.
+    \param ms Milliseconds.
+ */
+WORD counterVal = 0;
+
+void SPI_Timer_On (WORD ms){
+
+	counterVal = ms * 100000;
+	XTmrCtr_SetResetValue(&TimerCounter, 0, 0);
+	XTmrCtr_Start(&TimerCounter, 0);
+
+}
+
+/**
+    \brief Check the status of non-blocking timer.
+    \return Status, TRUE if timeout is not reach yet.
+ */
+BOOL SPI_Timer_Status (void){
+	u32 val = XTmrCtr_GetValue(&TimerCounter, 0);
+	return val < counterVal;
+}
+
+/**
+    \brief Stop of non-blocking timer. Mandatory.
+ */
+void SPI_Timer_Off (void){
+	XTmrCtr_Stop(&TimerCounter, 0);
+
+}

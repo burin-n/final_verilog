@@ -1,0 +1,169 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+Process ID: 5552
+
+Current time: 	5/24/17 3:07:48 AM ICT
+Time zone: 	Indochina Time (Asia/Bangkok)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=13
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.4/tps/win64/jre
+
+User name: 	freespace
+User home directory: C:/Users/freespace
+User working directory: C:/Users/freespace/Desktop/project_final/quicksdcard
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.4/data
+RDI bin directory: C:/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/freespace/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/freespace/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	222 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 426 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bt:g (cd:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\freespace\Desktop\project_final\quicksdcard\quicksdcard.xpr. Version: Vivado v2016.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// Tcl Message: open_project C:/Users/freespace/Desktop/project_final/quicksdcard/quicksdcard.xpr 
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 37 MB (+36474kb) [00:00:06]
+// [Engine Memory]: 414 MB (+282757kb) [00:00:06]
+// TclEventType: IP_LOCK_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 456 MB. GUI used memory: 30 MB. Current time: 5/24/17 3:07:51 AM ICT
+// TclEventType: IP_LOCK_CHANGE
+// [Engine Memory]: 472 MB (+39067kb) [00:00:11]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 524 MB (+29993kb) [00:00:13]
+// [GUI Memory]: 56 MB (+17400kb) [00:00:15]
+// [GUI Memory]: 61 MB (+2746kb) [00:00:17]
+// [Engine Memory]: 552 MB (+1122kb) [00:00:18]
+// Tcl Message: open_project C:/Users/freespace/Desktop/project_final/quicksdcard/quicksdcard.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/freespace/Desktop/quicksdcard' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/freespace/Desktop/project_final/myvga_1.0'. 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:14 . Memory (MB): peak = 819.137 ; gain = 166.297 
+// Project name: quicksdcard; location: C:/Users/freespace/Desktop/project_final/quicksdcard; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 578 MB. GUI used memory: 44 MB. Current time: 5/24/17 3:08:06 AM ICT
+// Elapsed time: 13 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X:q (cd:JFrame): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // g:JCheckBox (JPanel:JComponent, X:q): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:q)
+// 'm' command handler elapsed time: 5 seconds
+dismissDialog("Export Hardware"); // X:q (cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// [Engine Memory]: 582 MB (+2701kb) [00:00:47]
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Customize Commands"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SETTINGS
+// Project Settings: addNotify
+// [GUI Memory]: 67 MB (+3462kb) [00:00:48]
+selectButton("Bitstream", "Bitstream"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, i:aA)
+selectButton("IP", "IP"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, i:aA)
+selectTab(PAResourceOtoP.ProjectSettingsIPPage_TABBED_PANE, PAResourceOtoP.ProjectSettingsIPPage_REPOSITORY_MANAGER, "Repository Manager", 1); // g:JideTabbedPane (w:aI, i:aA)
+selectList(PAResourceOtoP.ProjectSettingsIPRepositoryPanel_REPOSITORY_CHOOSER, "c:/Users/freespace/Desktop/project_final/UartToVga", 2); // o:a (JViewport:JComponent, i:aA)
+// HMemoryUtils.trashcanNow. Engine heap size: 603 MB. GUI used memory: 47 MB. Current time: 5/24/17 3:08:36 AM ICT
+selectList(PAResourceOtoP.ProjectSettingsIPRepositoryPanel_REPOSITORY_CHOOSER, "c:/Users/freespace/Desktop/project_final/UartToVga/UartToVga.ipdefs/lab8mat_0/vga_test_0_1", 1); // o:a (JViewport:JComponent, i:aA)
+selectList(PAResourceOtoP.ProjectSettingsIPRepositoryPanel_REPOSITORY_CHOOSER, "c:/Users/freespace/Desktop/project_final/UartToVga", 2); // o:a (JViewport:JComponent, i:aA)
+selectList(PAResourceOtoP.ProjectSettingsIPRepositoryPanel_REPOSITORY_CHOOSER, "c:/Users/freespace/Desktop/project_final/UartToVga/UartToVga.ipdefs/lab8mat_0/vga_test_0_1", 1, false, true, false, false, false); // o:a (JViewport:JComponent, i:aA) - Control Key
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // y:JideButton (CommandBar:DockableBar, i:aA)
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  c:/Users/freespace/Desktop/project_final/myvga_1.0 [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// bt:g (cd:JFrame):  Refresh All IP Repositories : addNotify
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/freespace/Desktop/project_final/myvga_1.0'. 
+// TclEventType: CREATE_IP_CATALOG
+// [GUI Memory]: 71 MB (+336kb) [00:01:06]
+dismissDialog("Refresh All IP Repositories"); // bt:g (cd:JFrame)
+selectList(PAResourceOtoP.ProjectSettingsIPRepositoryPanel_REPOSITORY_CHOOSER, "c:/Users/freespace/Desktop/project_final/myvga_1.0", 0); // o:a (JViewport:JComponent, i:aA)
+// [GUI Memory]: 82 MB (+7734kb) [00:01:08]
+selectButton("APPLY", "Apply"); // JButton:AbstractButton (ButtonPanel:JPanel, i:aA)
+selectButton("OK", "OK"); // JButton:AbstractButton (ButtonPanel:JPanel, i:aA)
+dismissDialog("Project Settings"); // i:aA (cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X:q (cd:JFrame): Export Hardware: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:q)
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, G:JDialog)
+dismissDialog("Export Hardware"); // X:q (cd:JFrame)
+// Tcl Message: file copy -force C:/Users/freespace/Desktop/project_final/quicksdcard/quicksdcard.runs/impl_1/design_1_wrapper.sysdef C:/Users/freespace/Desktop/project_final/quicksdcard/quicksdcard.sdk/design_1_wrapper.hdf  
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:q (cd:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:q)
+dismissDialog("Launch SDK"); // aa:q (cd:JFrame)
+// Tcl Message: launch_sdk -workspace C:/Users/freespace/Desktop/project_final/quicksdcard/quicksdcard.sdk -hwspec C:/Users/freespace/Desktop/project_final/quicksdcard/quicksdcard.sdk/design_1_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/freespace/Desktop/project_final/quicksdcard/quicksdcard.sdk -hwspec C:/Users/freespace/Desktop/project_final/quicksdcard/quicksdcard.sdk/design_1_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.

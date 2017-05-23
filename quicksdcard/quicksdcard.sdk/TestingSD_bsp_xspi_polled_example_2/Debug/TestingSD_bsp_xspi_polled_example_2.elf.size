@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+   8232	    320	   3232	  11784	   2e08	TestingSD_bsp_xspi_polled_example_2.elf

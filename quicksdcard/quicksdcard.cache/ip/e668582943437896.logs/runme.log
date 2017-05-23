@@ -1,0 +1,62 @@
+
+*** Running vivado
+    with args -log design_1_rst_clk_wiz_0_100M_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_rst_clk_wiz_0_100M_0.tcl
+
+
+****** Vivado v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source design_1_rst_clk_wiz_0_100M_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1090.160 ; gain = 179.301 ; free physical = 1171 ; free virtual = 25800
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_0_100M_0' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/synth/design_1_rst_clk_wiz_0_100M_0.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'SRL16' [/opt/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:43312]
+INFO: [Synth 8-256] done synthesizing module 'SRL16' (1#1) [/opt/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:43312]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (2#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (3#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (4#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (5#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (6#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ipshared/04b4/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_clk_wiz_0_100M_0' (7#1) [/home/catus/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/synth/design_1_rst_clk_wiz_0_100M_0.vhd:71]
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1131.629 ; gain = 220.770 ; free physical = 1101 ; free virtual = 25730
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1131.629 ; gain = 220.770 ; free physical = 1097 ; free virtual = 25726
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1494.414 ; gain = 0.000 ; free physical = 785 ; free virtual = 25414
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1494.414 ; gain = 583.555 ; free physical = 751 ; free virtual = 25380
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1494.414 ; gain = 583.555 ; free physical = 751 ; free virtual = 25380
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1494.414 ; gain = 583.555 ; free physical = 751 ; free virtual = 25380
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1494.414 ; gain = 583.555 ; free physical = 740 ; free virtual = 25370
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1494.414 ; gain = 583.555 ; free physical = 710 ; free virtual = 25339
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1494.414 ; gain = 583.555 ; free physical = 599 ; free virtual = 25229
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1494.414 ; gain = 583.555 ; free physical = 596 ; free virtual = 25225
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1494.414 ; gain = 583.555 ; free physical = 572 ; free virtual = 25201
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1494.414 ; gain = 583.555 ; free physical = 1070 ; free virtual = 25699
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1494.414 ; gain = 583.555 ; free physical = 1070 ; free virtual = 25699
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1494.414 ; gain = 583.555 ; free physical = 1070 ; free virtual = 25699
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1494.414 ; gain = 583.555 ; free physical = 1070 ; free virtual = 25699
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1494.414 ; gain = 583.555 ; free physical = 1058 ; free virtual = 25687
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1494.414 ; gain = 583.555 ; free physical = 1058 ; free virtual = 25687
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     5|
+|2     |LUT2  |     9|
+|3     |LUT3  |     1|
+|4     |LUT4  |     6|
+|5     |LUT5  |     3|
+|6     |LUT6  |     1|
+|7     |SRL16 |     1|
+|8     |FDR   |     8|
+|9     |FDRE  |    28|
+|10    |FDSE  |     4|
++------+------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1494.414 ; gain = 583.555 ; free physical = 1058 ; free virtual = 25687
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1494.414 ; gain = 484.836 ; free physical = 777 ; free virtual = 25406

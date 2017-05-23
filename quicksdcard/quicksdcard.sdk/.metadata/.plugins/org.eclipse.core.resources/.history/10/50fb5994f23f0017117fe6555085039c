@@ -1,0 +1,162 @@
+/******************************************************************************
+*
+* Copyright (C) 2008 - 2014 Xilinx, Inc.  All rights reserved.
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+*
+* The above copyright notice and this permission notice shall be included in
+* all copies or substantial portions of the Software.
+*
+* Use of the Software is limited solely to applications:
+* (a) running on a Xilinx device, or
+* (b) that interact with a Xilinx device through a bus or interconnect.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+* WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
+* OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+* Except as contained in this notice, the name of the Xilinx shall not be used
+* in advertising or otherwise to promote the sale, use or other dealings in
+* this Software without prior written authorization from Xilinx.
+*
+******************************************************************************/
+/*****************************************************************************/
+/**
+* @file xspi_polled_example.c
+*
+*
+* This file contains a design example using the Spi driver (XSpi) and the Spi
+* device using the polled mode.
+*
+* To put the driver in polled mode the Global Interrupt must be disabled after
+* the Spi is Initialized and Spi driver is started.
+*
+* This example works with a PPC/MicroBlaze processor.
+*
+* @note
+*
+* None.
+*
+*<pre>
+* MODIFICATION HISTORY:
+*
+* Ver   Who  Date     Changes
+* ----- ---- -------- ---------------------------------------------------------
+* 1.00a sdm  03/03/08 First Release
+* 3.00a ktn  10/28/09 Converted all register accesses to 32 bit access.
+*		      Updated to use the HAL APIs/macros. Replaced call to
+*		      XSpi_Initialize API with XSpi_LookupConfig and
+*		      XSpi_CfgInitialize.
+* 3.02a sdm  05/04/11 Updated to run the loopback test only in standard spi
+*		      mode.
+*</pre>
+******************************************************************************/
+
+/***************************** Include Files *********************************/
+#include "sd_io.h"
+
+#include "xparameters.h"	/* XPAR parameters */
+#include "xspi.h"		/* SPI device driver */
+#include "xspi_l.h"
+#include "xil_printf.h"
+/************************** Constant Definitions *****************************/
+
+
+int main(void)
+{
+	int Status;
+
+	/*
+	 * Run the Spi Polled example.
+	 */
+	SD_DEV dev[1];          // Create device descriptor
+	uint8_t buffer[512];    // Example of your buffer data
+	SDRESULTS res;
+
+	  // Part of your initialization code here
+	  if(SD_Init(dev)==SD_OK)
+	  {
+	    // You can read the sd card. For example you can read from the second
+	    res = SD_Read(dev, (void*)buffer, 0, 0, 512);
+	    if(res==SD_OK) {
+	    	print("Success");
+	    }
+	  }
+
+/*	  for(int i=0;i<100;i++) {
+		  print("x");
+		  SPI_Timer_On(500);
+		  while(SPI_Timer_Status()==TRUE);
+		  SPI_Timer_Off();
+	  }*/
+
+	  // below is my logic
+
+	  int i=0, *bram = (int*)0xC0000000;
+	  print("Sook mong kol!");
+
+	  char c;
+
+	  while(1){
+		  c = inbyte();
+		  xil_printf("%c\n\r",c);
+		  if(c=='r'){
+			  for(i=0;i<512;i++){
+				  bram[2*i] = 4095;
+				  bram[2*i+1] =4095;
+				  xil_printf("#%d ",bram[2*i]);
+			  }
+		  }
+		  else{
+			  for(i=0;i<512;i++){
+//				  xil_printf("%02x ",buffer[i]);
+				  if(buffer[i] <0x10){
+					  bram[i] = 0+(buffer[i]);
+					  bram[2*i+1] = 0+(buffer[i]);
+//					  xil_printf("%02x  bbbbbbbbbbbbbbbbb\n\r",buffer[i]);
+				  }
+				  else if(buffer[i] <0x20){
+					  bram[i] =16*(buffer[i]-0x10);
+					  bram[2*i+1] = 16*(buffer[i]-0x10);
+//					  xil_printf("%02x  ggggggggggggggg\n\r",buffer[i]);
+				  }
+				  else if(buffer[i] <0x30){
+					  bram[i] = 256*(buffer[i]-0x20);
+					  bram[2*i+1] = 256*(buffer[i]-0x20);
+//					  xil_printf("%02x \n\r",buffer[i]);
+				  }
+				  else if(buffer[i] <0x40){
+					  bram[i] = 17*(buffer[i]-0x30);
+					  bram[2*i+1] = 17*(buffer[i]-0x30);
+//					  xil_printf("%02x \n\r",buffer[i]);
+				  }
+				  else if(buffer[i] <0x50){
+					  bram[i] = 257*(buffer[i]-0x40);
+					  bram[2*i+1] = 257*(buffer[i]-0x40);
+//					  xil_printf("%02x \n\r",buffer[i]);
+				  }
+				  else if(buffer[i] <0x60){
+					  bram[i] = 272*(buffer[i]-0x50);
+					  bram[2*i+1] = 272*(buffer[i]-0x50);
+//					  xil_printf("%02x \n\r",buffer[i]);
+
+				  }
+				  else { bram[i] = 4095; }
+				  xil_printf("%d ",bram[i]);
+			  }
+
+		  }
+	  }
+
+	return XST_SUCCESS;
+}
+

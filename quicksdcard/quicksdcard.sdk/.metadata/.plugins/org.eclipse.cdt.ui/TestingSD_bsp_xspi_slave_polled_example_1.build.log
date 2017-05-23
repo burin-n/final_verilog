@@ -1,0 +1,21 @@
+19:50:36 **** Build of configuration Debug for project TestingSD_bsp_xspi_slave_polled_example_1 ****
+make all 
+Building file: ../src/xspi_slave_polled_example.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xspi_slave_polled_example.o" -I../../TestingSD_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/xspi_slave_polled_example.d" -MT"src/xspi_slave_polled_example.o" -o "src/xspi_slave_polled_example.o" "../src/xspi_slave_polled_example.c"
+Finished building: ../src/xspi_slave_polled_example.c
+ 
+Building target: TestingSD_bsp_xspi_slave_polled_example_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TestingSD_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "TestingSD_bsp_xspi_slave_polled_example_1.elf"  ./src/xspi_slave_polled_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: TestingSD_bsp_xspi_slave_polled_example_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size TestingSD_bsp_xspi_slave_polled_example_1.elf  |tee "TestingSD_bsp_xspi_slave_polled_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10884	    324	   3256	  14464	   3880	TestingSD_bsp_xspi_slave_polled_example_1.elf
+Finished building: TestingSD_bsp_xspi_slave_polled_example_1.elf.size
+ 
+
+19:50:36 Build Finished (took 173ms)
+

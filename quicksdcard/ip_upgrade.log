@@ -1,0 +1,233 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue May 23 19:13:46 2017
+| Host         : DESKTOP-RATFUVO running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_myvga_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_myvga_0_0 (xilinx.com:user:myvga:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue May 23 18:02:20 2017
+| Host         : DESKTOP-RATFUVO running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_myvga_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_myvga_0_0 (xilinx.com:user:myvga:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue May 23 17:40:01 2017
+| Host         : DESKTOP-RATFUVO running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_myvga_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_myvga_0_0 (xilinx.com:user:myvga:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue May 23 15:43:43 2017
+| Host         : DESKTOP-RATFUVO running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_microblaze_0_axi_periph_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_microblaze_0_axi_periph_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 11) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue May 23 15:43:43 2017
+| Host         : DESKTOP-RATFUVO running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_microblaze_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_microblaze_0_1 (xilinx.com:ip:microblaze:10.0) to (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue May 23 15:43:43 2017
+| Host         : DESKTOP-RATFUVO running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mdm_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mdm_1_0 (xilinx.com:ip:mdm:3.2) from (Rev. 7) to (Rev. 8)
+
+2. Upgrade messages
+-------------------
+
+Set parameter C_M_AXIS_ID_WIDTH to value 7 (source 'default')
+WARNING: upgrade cannot add parameter C_DEBUG_INTERFACE with default value 0 : a parameter called C_DEBUG_INTERFACE already exists in mdm_v3_2
+Set parameter C_S_AXI_ADDR_WIDTH to value 4 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue May 23 15:43:43 2017
+| Host         : DESKTOP-RATFUVO running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_lmb_bram_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_lmb_bram_0 (xilinx.com:ip:blk_mem_gen:8.3) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue May 23 15:43:43 2017
+| Host         : DESKTOP-RATFUVO running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_clk_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:5.3) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue May 23 15:43:43 2017
+| Host         : DESKTOP-RATFUVO running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_uartlite_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_uartlite_0_0 (xilinx.com:ip:axi_uartlite:2.0) from (Rev. 14) to (Rev. 15)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue May 23 15:43:43 2017
+| Host         : DESKTOP-RATFUVO running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_timer_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_timer_0_0 (xilinx.com:ip:axi_timer:2.0) from (Rev. 12) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue May 23 15:43:43 2017
+| Host         : DESKTOP-RATFUVO running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_quad_spi_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_quad_spi_0_0 (xilinx.com:ip:axi_quad_spi:3.2) from (Rev. 9) to (Rev. 10)
+

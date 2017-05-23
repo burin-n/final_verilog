@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 23 22:59:36 2017
+# Process ID: 6972
+# Current directory: C:/Users/freespace/Desktop/quicksdcard
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6528 C:\Users\freespace\Desktop\quicksdcard\quicksdcard.xpr
+# Log file: C:/Users/freespace/Desktop/quicksdcard/vivado.log
+# Journal file: C:/Users/freespace/Desktop/quicksdcard\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/freespace/Desktop/quicksdcard/quicksdcard.xpr
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reorder_files -fileset constrs_1 -after C:/Users/freespace/Desktop/quicksdcard/quicksdcard.srcs/constrs_1/new/spi.xdc C:/Users/freespace/Desktop/quicksdcard/quicksdcard.srcs/constrs_1/new/spi.xdc
+file copy -force C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/impl_1/design_1_wrapper.sysdef C:/Users/freespace/Desktop/quicksdcard/quicksdcard.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/freespace/Desktop/quicksdcard/quicksdcard.sdk -hwspec C:/Users/freespace/Desktop/quicksdcard/quicksdcard.sdk/design_1_wrapper.hdf

@@ -1,0 +1,365 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 23 15:41:53 2017
+# Process ID: 9788
+# Current directory: C:/Users/freespace/Desktop/quicksdcard
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8184 C:\Users\freespace\Desktop\quicksdcard\quicksdcard.xpr
+# Log file: C:/Users/freespace/Desktop/quicksdcard/vivado.log
+# Journal file: C:/Users/freespace/Desktop/quicksdcard\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/freespace/Desktop/quicksdcard/quicksdcard.xpr
+INFO: [Project 1-313] Project file moved from '/home/catus/quicksdcard' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_clk_wiz_0_0
+design_1_microblaze_0_1
+design_1_axi_quad_spi_0_0
+design_1_axi_uartlite_0_0
+design_1_mdm_1_0
+design_1_lmb_bram_0
+design_1_axi_timer_0_0
+design_1_xbar_0
+
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 849.098 ; gain = 183.559
+open_bd_design {C:/Users/freespace/Desktop/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - clk_wiz_0
+Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_100M
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:axi_quad_spi:3.2 - axi_quad_spi_0
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - lmb_bram
+Successfully read diagram <design_1> from BD file <C:/Users/freespace/Desktop/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 939.902 ; gain = 79.660
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {design_1_microblaze_0_1 design_1_axi_timer_0_0 design_1_clk_wiz_0_0 design_1_axi_uartlite_0_0 design_1_lmb_bram_0 design_1_axi_quad_spi_0_0 design_1_microblaze_0_axi_periph_0 design_1_mdm_1_0}] -log ip_upgrade.log
+Upgrading 'C:/Users/freespace/Desktop/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_axi_quad_spi_0_0 (AXI Quad SPI 3.2) from revision 9 to revision 10
+INFO: [IP_Flow 19-3422] Upgraded design_1_axi_timer_0_0 (AXI Timer 2.0) from revision 12 to revision 13
+INFO: [IP_Flow 19-3422] Upgraded design_1_axi_uartlite_0_0 (AXI Uartlite 2.0) from revision 14 to revision 15
+INFO: [IP_Flow 19-3422] Upgraded design_1_clk_wiz_0_0 (Clocking Wizard 5.3) from revision 2 to revision 3
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [IP_Flow 19-3422] Upgraded design_1_lmb_bram_0 (Block Memory Generator 8.3) from revision 4 to revision 5
+INFO: [IP_Flow 19-3422] Upgraded design_1_mdm_1_0 (MicroBlaze Debug Module (MDM) 3.2) from revision 7 to revision 8
+INFO: [IP_Flow 19-3422] Upgraded design_1_microblaze_0_1 (MicroBlaze 10.0) from revision 0 to revision 1
+INFO: [IP_Flow 19-3422] Upgraded design_1_microblaze_0_axi_periph_0 (AXI Interconnect 2.1) from revision 11 to revision 12
+Wrote  : <C:/Users/freespace/Desktop/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/freespace/Desktop/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/freespace/Desktop/quicksdcard/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 1148.227 ; gain = 208.324
+export_ip_user_files -of_objects [get_ips {design_1_microblaze_0_1 design_1_axi_timer_0_0 design_1_clk_wiz_0_0 design_1_axi_uartlite_0_0 design_1_lmb_bram_0 design_1_axi_quad_spi_0_0 design_1_microblaze_0_axi_periph_0 design_1_mdm_1_0}] -no_script -sync -force -quiet
+set_property  ip_repo_paths  C:/Users/freespace/Desktop/myvga_1.0 [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/freespace/Desktop/myvga_1.0'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:myvga:1.0 myvga_0
+endgroup
+set_property location {3 1600 526} [get_bd_cells myvga_0]
+set_property location {3 1718 491} [get_bd_cells myvga_0]
+connect_bd_net [get_bd_pins myvga_0/clk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins myvga_0/reset] [get_bd_pins rst_clk_wiz_0_100M/peripheral_reset]
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace C:/Users/freespace/Desktop/quicksdcard/quicksdcard.sdk -hwspec C:/Users/freespace/Desktop/quicksdcard/quicksdcard.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/freespace/Desktop/quicksdcard/quicksdcard.sdk -hwspec C:/Users/freespace/Desktop/quicksdcard/quicksdcard.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_0
+endgroup
+set_property location {3 1637 385} [get_bd_cells blk_mem_gen_0]
+set_property location {3 1103 398} [get_bd_cells blk_mem_gen_0]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Use_RSTB_Pin {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100}] [get_bd_cells blk_mem_gen_0]
+endgroup
+report_ip_status -name ip_status 
+startgroup
+set_property -dict [list CONFIG.NUM_MI {4}] [get_bd_cells microblaze_0_axi_periph]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.0 axi_bram_ctrl_0
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] design_1_axi_bram_ctrl_0_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] design_1_axi_bram_ctrl_0_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+endgroup
+set_property location {2 602 614} [get_bd_cells axi_bram_ctrl_0]
+set_property location {3 1136 603} [get_bd_cells blk_mem_gen_0]
+connect_bd_intf_net [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTA]
+set_property location {2 566 576} [get_bd_cells axi_bram_ctrl_0]
+set_property location {2 571 601} [get_bd_cells axi_bram_ctrl_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/microblaze_0 (Periph)" Clk "Auto" }  [get_bd_intf_pins axi_bram_ctrl_0/S_AXI]
+</axi_bram_ctrl_0/S_AXI/Mem0> is being mapped into </microblaze_0/Data> at <0xC0000000 [ 8K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:bram_cntlr -config {BRAM "/blk_mem_gen_0" }  [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTB]
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTB]
+connect_bd_net [get_bd_pins myvga_0/addr] [get_bd_pins blk_mem_gen_0/addrb]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/addrb is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTB
+connect_bd_net [get_bd_pins myvga_0/enable] [get_bd_pins blk_mem_gen_0/enb]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/enb is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTB
+connect_bd_net [get_bd_pins blk_mem_gen_0/rstb] [get_bd_pins rst_clk_wiz_0_100M/peripheral_reset]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/rstb is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTB
+connect_bd_net [get_bd_pins blk_mem_gen_0/doutb] [get_bd_pins myvga_0/data]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/doutb is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTB
+connect_bd_net [get_bd_pins blk_mem_gen_0/clkb] [get_bd_pins clk_wiz_0/clk_out1]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/clkb is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTB
+create_bd_port -dir I hsync
+undo
+INFO: [Common 17-17] undo 'create_bd_port -dir I hsync'
+create_bd_port -dir O vsync
+set_property location {1282 410} [get_bd_ports vsync]
+connect_bd_net [get_bd_ports vsync] [get_bd_pins myvga_0/vsync]
+create_bd_port -dir O hsync
+create_bd_port -dir O rgb
+startgroup
+set_property location {1289 439} [get_bd_ports hsync]
+set_property location {1289 459} [get_bd_ports rgb]
+endgroup
+startgroup
+set_property location {1287 407} [get_bd_ports rgb]
+set_property location {1287 387} [get_bd_ports hsync]
+endgroup
+startgroup
+connect_bd_net [get_bd_ports hsync] [get_bd_pins myvga_0/hsync]
+connect_bd_net [get_bd_ports rgb] [get_bd_pins myvga_0/hsync]
+endgroup
+delete_bd_objs [get_bd_nets myvga_0_hsync]
+connect_bd_net [get_bd_ports hsync] [get_bd_pins myvga_0/hsync]
+set_property location {1289 449} [get_bd_ports rgb]
+set_property location {1282 409} [get_bd_ports vsync]
+set_property location {1277 430} [get_bd_ports rgb]
+connect_bd_net [get_bd_ports rgb] [get_bd_pins myvga_0/rgb]
+save_bd_design
+Wrote  : <C:/Users/freespace/Desktop/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/freespace/Desktop/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+reset_run design_1_dlmb_bram_if_cntlr_0_synth_1
+reset_run design_1_dlmb_v10_0_synth_1
+reset_run design_1_rst_clk_wiz_0_100M_0_synth_1
+reset_run design_1_ilmb_bram_if_cntlr_0_synth_1
+reset_run design_1_ilmb_v10_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                  ########################################################################################
+                  INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are asynchronous to each other.
+                  ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                  ########################################################################################
+                  INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are asynchronous to each other.
+                  ########################################################################################
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_0: PORT /axi_bram_ctrl_0/BRAM_PORTB is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.0-1] /axi_bram_ctrl_0: PORT /axi_bram_ctrl_0/BRAM_PORTB is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+Verilog Output written to : C:/Users/freespace/Desktop/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : C:/Users/freespace/Desktop/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Wrote  : <C:/Users/freespace/Desktop/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2016.4/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2016.4/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2016.4/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2016.4/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2016.4/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2016.4/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2016.4/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2016.4/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2016.4/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2016.4/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2016.4/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2016.4/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2016.4/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2016.4/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2016.4/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_quad_spi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myvga_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_pc .
+Exporting to file C:/Users/freespace/Desktop/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] test_ip: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] test_ip: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+Generated Block Design Tcl file C:/Users/freespace/Desktop/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/freespace/Desktop/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+[Tue May 23 16:10:28 2017] Launched design_1_dlmb_bram_if_cntlr_0_synth_1, design_1_dlmb_v10_0_synth_1, design_1_rst_clk_wiz_0_100M_0_synth_1, design_1_ilmb_bram_if_cntlr_0_synth_1, design_1_ilmb_v10_0_synth_1, design_1_axi_timer_0_0_synth_1, design_1_axi_uartlite_0_0_synth_1, design_1_mdm_1_0_synth_1, design_1_axi_quad_spi_0_0_synth_1, design_1_lmb_bram_0_synth_1, design_1_microblaze_0_1_synth_1, design_1_clk_wiz_0_0_synth_1, design_1_xbar_0_synth_1, design_1_blk_mem_gen_0_0_synth_1, design_1_auto_pc_0_synth_1, design_1_myvga_0_0_synth_1, design_1_axi_bram_ctrl_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_dlmb_bram_if_cntlr_0_synth_1: C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/runme.log
+design_1_dlmb_v10_0_synth_1: C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/design_1_dlmb_v10_0_synth_1/runme.log
+design_1_rst_clk_wiz_0_100M_0_synth_1: C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/design_1_rst_clk_wiz_0_100M_0_synth_1/runme.log
+design_1_ilmb_bram_if_cntlr_0_synth_1: C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/design_1_ilmb_bram_if_cntlr_0_synth_1/runme.log
+design_1_ilmb_v10_0_synth_1: C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/design_1_ilmb_v10_0_synth_1/runme.log
+design_1_axi_timer_0_0_synth_1: C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/design_1_axi_timer_0_0_synth_1/runme.log
+design_1_axi_uartlite_0_0_synth_1: C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/design_1_axi_uartlite_0_0_synth_1/runme.log
+design_1_mdm_1_0_synth_1: C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/design_1_mdm_1_0_synth_1/runme.log
+design_1_axi_quad_spi_0_0_synth_1: C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/design_1_axi_quad_spi_0_0_synth_1/runme.log
+design_1_lmb_bram_0_synth_1: C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/design_1_lmb_bram_0_synth_1/runme.log
+design_1_microblaze_0_1_synth_1: C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/design_1_microblaze_0_1_synth_1/runme.log
+design_1_clk_wiz_0_0_synth_1: C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+design_1_xbar_0_synth_1: C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/design_1_xbar_0_synth_1/runme.log
+design_1_blk_mem_gen_0_0_synth_1: C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/design_1_blk_mem_gen_0_0_synth_1/runme.log
+design_1_auto_pc_0_synth_1: C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/design_1_auto_pc_0_synth_1/runme.log
+design_1_myvga_0_0_synth_1: C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/design_1_myvga_0_0_synth_1/runme.log
+design_1_axi_bram_ctrl_0_0_synth_1: C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/design_1_axi_bram_ctrl_0_0_synth_1/runme.log
+synth_1: C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/synth_1/runme.log
+[Tue May 23 16:10:29 2017] Launched impl_1...
+Run output will be captured here: C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1321.684 ; gain = 38.375
+file copy -force C:/Users/freespace/Desktop/quicksdcard/quicksdcard.runs/impl_1/design_1_wrapper.sysdef C:/Users/freespace/Desktop/quicksdcard/quicksdcard.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/freespace/Desktop/quicksdcard/quicksdcard.sdk -hwspec C:/Users/freespace/Desktop/quicksdcard/quicksdcard.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/freespace/Desktop/quicksdcard/quicksdcard.sdk -hwspec C:/Users/freespace/Desktop/quicksdcard/quicksdcard.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+ipx::edit_ip_in_project -upgrade true -name myvga_v1_0_project -directory C:/Users/freespace/Desktop/quicksdcard/quicksdcard.tmp/myvga_v1_0_project c:/Users/freespace/Desktop/myvga_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/freespace/Desktop/myvga_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1465.871 ; gain = 0.000
+close_project
+ipx::edit_ip_in_project -upgrade true -name myvga_v1_0_project -directory C:/Users/freespace/Desktop/quicksdcard/quicksdcard.tmp/myvga_v1_0_project c:/Users/freespace/Desktop/myvga_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/freespace/Desktop/myvga_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1479.273 ; gain = 13.402
+close_project
+set_property  ip_repo_paths  {c:/Users/freespace/Desktop/myvga_1.0 C:/Users/freespace/Desktop/UartToVga} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/freespace/Desktop/myvga_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/freespace/Desktop/UartToVga'.
+set_property  ip_repo_paths  {c:/Users/freespace/Desktop/myvga_1.0 c:/Users/freespace/Desktop/UartToVga C:/Users/freespace/Desktop/UartToVga/UartToVga.ipdefs/lab8mat_0/vga_test_0_1} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/freespace/Desktop/myvga_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/freespace/Desktop/UartToVga'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/freespace/Desktop/UartToVga/UartToVga.ipdefs/lab8mat_0/vga_test_0_1'. The path is contained within another repository.
+set_property  ip_repo_paths  {c:/Users/freespace/Desktop/myvga_1.0 c:/Users/freespace/Desktop/UartToVga/UartToVga.ipdefs/lab8mat_0/vga_test_0_1} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/freespace/Desktop/myvga_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/freespace/Desktop/UartToVga/UartToVga.ipdefs/lab8mat_0/vga_test_0_1'.
+set_property  ip_repo_paths  {c:/Users/freespace/Desktop/myvga_1.0 c:/Users/freespace/Desktop/UartToVga/UartToVga.ipdefs/lab8mat_0/vga_test_0_1 C:/Users/freespace/Desktop/UartToVga} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/freespace/Desktop/myvga_1.0'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/freespace/Desktop/UartToVga/UartToVga.ipdefs/lab8mat_0/vga_test_0_1'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/freespace/Desktop/UartToVga'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:vga_test:1.0 vga_test_0
+endgroup
+set_property location {4 1308 607} [get_bd_cells vga_test_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:vga_test:1.0 vga_test_1
+endgroup
+delete_bd_objs [get_bd_cells vga_test_1]
+delete_bd_objs [get_bd_nets myvga_0_addr] [get_bd_nets myvga_0_enable] [get_bd_nets myvga_0_hsync] [get_bd_nets myvga_0_vsync] [get_bd_nets myvga_0_rgb] [get_bd_nets blk_mem_gen_0_doutb] [get_bd_cells myvga_0]
+set_property location {3 1110 408} [get_bd_cells vga_test_0]
+ipx::edit_ip_in_project -upgrade true -name vga_test_v1_0_project -directory C:/Users/freespace/Desktop/quicksdcard/quicksdcard.tmp/vga_test_v1_0_project c:/Users/freespace/Desktop/UartToVga/UartToVga.ipdefs/lab8mat_0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/freespace/Desktop/myvga_1.0'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/freespace/Desktop/UartToVga/UartToVga.ipdefs/lab8mat_0/vga_test_0_1'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/freespace/Desktop/UartToVga'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+CRITICAL WARNING: [IP_Flow 19-3667] Component file 'D:/Mic/Archieves/Verilog/FinalProject/myVGA/myVGA.srcs/sim_1/new/sim.v' does not exist. The file is ignored.
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1524.359 ; gain = 0.000
+close_project
+connect_bd_net [get_bd_pins vga_test_0/addr] [get_bd_pins blk_mem_gen_0/addrb]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/addrb is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTB
+ipx::edit_ip_in_project -upgrade true -name vga_test_v1_0_project -directory C:/Users/freespace/Desktop/quicksdcard/quicksdcard.tmp/vga_test_v1_0_project c:/Users/freespace/Desktop/UartToVga/UartToVga.ipdefs/lab8mat_0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/freespace/Desktop/myvga_1.0'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/freespace/Desktop/UartToVga/UartToVga.ipdefs/lab8mat_0/vga_test_0_1'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/freespace/Desktop/UartToVga'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+CRITICAL WARNING: [IP_Flow 19-3667] Component file 'D:/Mic/Archieves/Verilog/FinalProject/myVGA/myVGA.srcs/sim_1/new/sim.v' does not exist. The file is ignored.
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1524.359 ; gain = 0.000
+startgroup
+current_project quicksdcard
+create_bd_cell -type ip -vlnv xilinx.com:user:myvga:1.0 myvga_0
+endgroup
+ipx::edit_ip_in_project -upgrade true -name myvga_v1_0_project -directory C:/Users/freespace/Desktop/quicksdcard/quicksdcard.tmp/myvga_v1_0_project c:/Users/freespace/Desktop/myvga_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/freespace/Desktop/myvga_1.0'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/freespace/Desktop/UartToVga/UartToVga.ipdefs/lab8mat_0/vga_test_0_1'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/freespace/Desktop/UartToVga'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1524.359 ; gain = 0.000
+current_project vga_test_v1_0_project
+current_project myvga_v1_0_project
+current_project vga_test_v1_0_project
+current_project myvga_v1_0_project
+current_project quicksdcard
+current_project myvga_v1_0_project
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 5 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/freespace/Desktop/myvga_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/freespace/Desktop/myvga_1.0'
+update_ip_catalog: Time (s): cpu = 00:01:58 ; elapsed = 00:02:11 . Memory (MB): peak = 2744.156 ; gain = 1216.680
+close_project
+open_bd_design {C:/Users/freespace/Desktop/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets vga_test_0_addr] [get_bd_cells vga_test_0]
+report_ip_status -name ip_status 
+report_ip_status: Time (s): cpu = 00:00:42 ; elapsed = 00:00:51 . Memory (MB): peak = 3547.219 ; gain = 469.754
+connect_bd_net [get_bd_ports hsync] [get_bd_pins myvga_0/hsync]
+set_property location {1428 427} [get_bd_ports vsync]
+save_bd_design
+Wrote  : <C:/Users/freespace/Desktop/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/freespace/Desktop/quicksdcard/quicksdcard.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 23 17:30:54 2017...

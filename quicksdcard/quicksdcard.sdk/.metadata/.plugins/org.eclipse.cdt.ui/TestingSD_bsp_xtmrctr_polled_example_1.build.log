@@ -1,0 +1,21 @@
+20:26:44 **** Build of configuration Debug for project TestingSD_bsp_xtmrctr_polled_example_1 ****
+make all 
+Building file: ../src/xtmrctr_polled_example.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_polled_example.o" -I../../TestingSD_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/xtmrctr_polled_example.d" -MT"src/xtmrctr_polled_example.o" -o "src/xtmrctr_polled_example.o" "../src/xtmrctr_polled_example.c"
+Finished building: ../src/xtmrctr_polled_example.c
+ 
+Building target: TestingSD_bsp_xtmrctr_polled_example_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TestingSD_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "TestingSD_bsp_xtmrctr_polled_example_1.elf"  ./src/xtmrctr_polled_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: TestingSD_bsp_xtmrctr_polled_example_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size TestingSD_bsp_xtmrctr_polled_example_1.elf  |tee "TestingSD_bsp_xtmrctr_polled_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6304	    308	   3164	   9776	   2630	TestingSD_bsp_xtmrctr_polled_example_1.elf
+Finished building: TestingSD_bsp_xtmrctr_polled_example_1.elf.size
+ 
+
+20:26:44 Build Finished (took 113ms)
+
