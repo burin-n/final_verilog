@@ -5268,3 +5268,112 @@ mb-size TestingSD_bsp_xspi_polled_example_1.elf  |tee "TestingSD_bsp_xspi_polled
 03:02:45 **** Incremental Build of configuration Debug for project TestingSD_bsp_xspi_polled_example_1 ****
 make all 
 make: Nothing to be done for `all'.
+13:02:09 **** Incremental Build of configuration Debug for project TestingSD_bsp_xspi_polled_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+13:03:34 **** Incremental Build of configuration Debug for project TestingSD_bsp_xspi_polled_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+13:03:36 **** Incremental Build of configuration Debug for project TestingSD_bsp_xspi_polled_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+13:03:42 **** Incremental Build of configuration Debug for project 1024 ****
+make all 
+make: Nothing to be done for `all'.
+13:04:01 **** Incremental Build of configuration Debug for project 1024 ****
+make all 
+make: Nothing to be done for `all'.
+13:04:05 **** Auto Build of configuration Debug for project 1024 ****
+make all 
+'Building file: ../src/1024.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/1024.o" -I../../1024_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/1024.d" -MT"src/1024.o" -o "src/1024.o" "../src/1024.c"
+'Finished building: ../src/1024.c'
+' '
+'Building target: 1024.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../1024_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "1024.elf"  ./src/1024.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: 1024.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size 1024.elf  |tee "1024.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6216	    296	   3120	   9632	   25a0	1024.elf
+'Finished building: 1024.elf.size'
+' '
+13:04:12 **** Incremental Build of configuration Debug for project hello ****
+make all 
+make: Nothing to be done for `all'.
+13:04:54 **** Auto Build of configuration Debug for project hello ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../hello_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "hello.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello.elf  |tee "hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16132	   1336	   3188	  20656	   50b0	hello.elf
+'Finished building: hello.elf.size'
+' '
+13:05:13 **** Auto Build of configuration Debug for project hello ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../hello_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "hello.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello.elf  |tee "hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16204	   1336	   3188	  20728	   50f8	hello.elf
+'Finished building: hello.elf.size'
+' '
+13:05:14 **** Incremental Build of configuration Debug for project hello ****
+make all 
+make: Nothing to be done for `all'.
+13:05:37 **** Incremental Build of configuration Debug for project TestingSD_bsp_xspi_polled_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+13:05:53 **** Incremental Build of configuration Debug for project TestingSD_bsp_xspi_polled_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+13:10:39 **** Incremental Build of configuration Debug for project TestingSD_bsp_xspi_polled_example_1 ****
+make all 
+'Building file: ../src/xspi_polled_example.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xspi_polled_example.o" -I../../TestingSD_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/xspi_polled_example.d" -MT"src/xspi_polled_example.o" -o "src/xspi_polled_example.o" "../src/xspi_polled_example.c"
+../src/xspi_polled_example.c: In function 'main':
+../src/xspi_polled_example.c:76:6: warning: unused variable 'Status' [-Wunused-variable]
+  int Status;
+      ^
+'Finished building: ../src/xspi_polled_example.c'
+' '
+'Building target: TestingSD_bsp_xspi_polled_example_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../TestingSD_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "TestingSD_bsp_xspi_polled_example_1.elf"  ./src/sd_io.o ./src/spi_io.o ./src/xspi_polled_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TestingSD_bsp_xspi_polled_example_1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size TestingSD_bsp_xspi_polled_example_1.elf  |tee "TestingSD_bsp_xspi_polled_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22940	    340	   3288	  26568	   67c8	TestingSD_bsp_xspi_polled_example_1.elf
+'Finished building: TestingSD_bsp_xspi_polled_example_1.elf.size'
+' '
+13:12:21 **** Incremental Build of configuration Debug for project TestingSD_bsp_xspi_polled_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+13:12:49 **** Incremental Build of configuration Debug for project 1024 ****
+make all 
+make: Nothing to be done for `all'.

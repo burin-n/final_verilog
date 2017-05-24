@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-  22952	    340	   3284	  26576	   67d0	TestingSD_bsp_xspi_polled_example_1.elf
+  22940	    340	   3288	  26568	   67c8	TestingSD_bsp_xspi_polled_example_1.elf

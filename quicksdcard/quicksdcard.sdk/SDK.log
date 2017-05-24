@@ -6895,3 +6895,14 @@ con
 03:09:30 INFO  : Registering command handlers for SDK TCF services
 03:09:30 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\freespace\Desktop\project_final\quicksdcard\quicksdcard.sdk\temp_xsdb_launch_script.tcl
 03:09:34 INFO  : XSCT server has started successfully.
+13:01:49 INFO  : Registering command handlers for SDK TCF services
+13:01:49 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\freespace\final_verilog\quicksdcard\quicksdcard.sdk\temp_xsdb_launch_script.tcl
+13:01:52 INFO  : XSCT server has started successfully.
+13:01:53 INFO  : Successfully done setting XSCT server connection channel  
+13:01:53 INFO  : Processing command line option -hwspec C:/Users/freespace/final_verilog/quicksdcard/quicksdcard.sdk/design_1_wrapper.hdf.
+13:01:53 INFO  : Successfully done setting SDK workspace  
+13:02:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A388ACA" && level==0} -index 0' command is executed.
+13:02:14 INFO  : 'fpga -state' command is executed.
+13:03:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:03:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183A388ACA" && level==0} -index 0' command is executed.
+13:03:07 INFO  : FPGA configured successfully with bitstream "C:/Users/freespace/final_verilog/quicksdcard/quicksdcard.sdk/design_1_wrapper_hw_platform_2/download.bit"

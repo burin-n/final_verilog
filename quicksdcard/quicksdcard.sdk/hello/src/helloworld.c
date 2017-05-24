@@ -64,21 +64,24 @@ int main()
     	xil_printf("%d:%c\n\r",*c,*c);
 
     	if(*c=='r'){
-    		*str=1;
+    		*str=0xF00;
     		xil_printf("1~");
     	}
     	else if(*c=='g'){
-    		*str=2;
+    		*str=0x0F0;
     		xil_printf("2~");
     	}
     	else if(*c=='b'){
     		xil_printf("3~");
-    		*str=3;
+    		*str=0x00F;
     	}
     	else{
-    		*str=4;
+    		*str=0xFFF;
     		xil_printf("4~");
     	}
+    	int i;
+    	for(i=0;i<1024;i++)
+    		str[i] = str[0];
 
     	xil_printf("str:%d\n\r",*str);
     }

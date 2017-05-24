@@ -37,7 +37,7 @@
  * PS7 UART (Zynq) is not initialized by this application, since
  * bootrom/bsp configures it to baud rate 115200
  *
- * ------------------------------------------------
+ * -------------x-----------------------------------
  * | UART TYPE   BAUD RATE                        |
  * ------------------------------------------------
  *   uartns550   9600

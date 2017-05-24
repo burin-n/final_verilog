@@ -119,7 +119,7 @@ int main(void)
 		  }
 		  else{
 			  for(i=0;i<512;i++){
-//				  xil_printf("%02x ",buffer[i]);
+				  xil_printf("%02x ",buffer[i]);
 				  if(buffer[i] <0x10){
 					  bram[i] = 0+(buffer[i]);
 					  bram[2*i+1] = 0+(buffer[i]);
@@ -152,7 +152,7 @@ int main(void)
 
 				  }
 				  else { bram[i] = 4095; }
-				  xil_printf("%02x ",bram[i]);
+//				  xil_printf("%02x ",bram[i]);
 			  }
 
 		  }
